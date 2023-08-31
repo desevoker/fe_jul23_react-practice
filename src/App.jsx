@@ -29,6 +29,12 @@ export const App = () => {
     }
   };
 
+  const handleResetOnclick = () => {
+    setSelectedUserId(-1);
+    setQuery('');
+    setSelectedCategoriesIds([]);
+  };
+
   return (
     <div className="section">
       <div className="container">
@@ -126,11 +132,7 @@ export const App = () => {
                 data-cy="ResetAllButton"
                 href="#/"
                 className="button is-link is-outlined is-fullwidth"
-                onClick={() => {
-                  setSelectedUserId(-1);
-                  setQuery('');
-                  setSelectedCategoriesIds([]);
-                }}
+                onClick={handleResetOnclick}
               >
                 Reset all filters
               </a>
