@@ -34,95 +34,95 @@ export const ProductsTable = ({
       className="table is-striped is-narrow is-fullwidth"
     >
       <thead>
-      <tr>
-        <th>
-        <span className="is-flex is-flex-wrap-nowrap">
-          ID
+        <tr>
+          <th>
+            <span className="is-flex is-flex-wrap-nowrap">
+              ID
 
-          <a href="#/">
-            <span className="icon">
-              <i
-                data-cy="SortIcon"
-                className={classNames('fas', {
-                  'fa-sort': sortType !== 'ID',
-                  'fa-sort-up': sortType === 'ID' && !isReversed,
-                  'fa-sort-down': sortType === 'ID' && isReversed,
-                })}
-                onClick={() => {
-                  handleSort('ID');
-                }}
-              />
+              <a href="#/">
+                <span className="icon">
+                  <i
+                    data-cy="SortIcon"
+                    className={classNames('fas', {
+                      'fa-sort': sortType !== 'ID',
+                      'fa-sort-up': sortType === 'ID' && !isReversed,
+                      'fa-sort-down': sortType === 'ID' && isReversed,
+                    })}
+                    onClick={() => {
+                      handleSort('ID');
+                    }}
+                  />
+                </span>
+              </a>
             </span>
-          </a>
-        </span>
-        </th>
+          </th>
 
-        <th>
-        <span className="is-flex is-flex-wrap-nowrap">
-          Product
+          <th>
+            <span className="is-flex is-flex-wrap-nowrap">
+              Product
 
-          <a href="#/">
-            <span className="icon">
-              <i
-                data-cy="SortIcon"
-                className={classNames('fas', {
-                  'fa-sort': sortType !== 'Product',
-                  'fa-sort-up': sortType === 'Product' && !isReversed,
-                  'fa-sort-down': sortType === 'Product' && isReversed,
-                })}
-                onClick={() => {
-                  handleSort('Product');
-                }}
-              />
+              <a href="#/">
+                <span className="icon">
+                  <i
+                    data-cy="SortIcon"
+                    className={classNames('fas', {
+                      'fa-sort': sortType !== 'Product',
+                      'fa-sort-up': sortType === 'Product' && !isReversed,
+                      'fa-sort-down': sortType === 'Product' && isReversed,
+                    })}
+                    onClick={() => {
+                      handleSort('Product');
+                    }}
+                  />
+                </span>
+              </a>
             </span>
-          </a>
-        </span>
-        </th>
+          </th>
 
-        <th>
-          <span className="is-flex is-flex-wrap-nowrap">
-            Category
+          <th>
+            <span className="is-flex is-flex-wrap-nowrap">
+              Category
 
-            <a href="#/">
-              <span className="icon">
-                <i
-                  data-cy="SortIcon"
-                  className={classNames('fas', {
-                    'fa-sort': sortType !== 'Category',
-                    'fa-sort-up': sortType === 'Category' && !isReversed,
-                    'fa-sort-down': sortType === 'Category' && isReversed,
-                  })}
-                  onClick={() => {
-                    handleSort('Category');
-                  }}
-                />
-              </span>
-            </a>
-          </span>
-        </th>
+              <a href="#/">
+                <span className="icon">
+                  <i
+                    data-cy="SortIcon"
+                    className={classNames('fas', {
+                      'fa-sort': sortType !== 'Category',
+                      'fa-sort-up': sortType === 'Category' && !isReversed,
+                      'fa-sort-down': sortType === 'Category' && isReversed,
+                    })}
+                    onClick={() => {
+                      handleSort('Category');
+                    }}
+                  />
+                </span>
+              </a>
+            </span>
+          </th>
 
-        <th>
-          <span className="is-flex is-flex-wrap-nowrap">
-            User
+          <th>
+            <span className="is-flex is-flex-wrap-nowrap">
+              User
 
-            <a href="#/">
-              <span className="icon">
-                <i
-                  data-cy="SortIcon"
-                  className={classNames('fas', {
-                    'fa-sort': sortType !== 'User',
-                    'fa-sort-up': sortType === 'User' && !isReversed,
-                    'fa-sort-down': sortType === 'User' && isReversed,
-                  })}
-                  onClick={() => {
-                    handleSort('User');
-                  }}
-                />
-              </span>
-            </a>
-          </span>
-        </th>
-      </tr>
+              <a href="#/">
+                <span className="icon">
+                  <i
+                    data-cy="SortIcon"
+                    className={classNames('fas', {
+                      'fa-sort': sortType !== 'User',
+                      'fa-sort-up': sortType === 'User' && !isReversed,
+                      'fa-sort-down': sortType === 'User' && isReversed,
+                    })}
+                    onClick={() => {
+                      handleSort('User');
+                    }}
+                  />
+                </span>
+              </a>
+            </span>
+          </th>
+        </tr>
       </thead>
 
       <tbody>
